@@ -1,0 +1,26 @@
+my_dict = {
+    "name": "Denys", 
+    "age": 16, 
+    "address": { 
+        "city": "Lutsk",
+        "street": "Konyakina",
+        "number": "5a",
+        "country": "Ukraine",
+        "area": "40th"
+    },
+    "is_student": False}
+
+print(my_dict)
+
+second_dict = {}
+
+for keys, checks in my_dict.items():
+    if type(checks) == my_dict:
+
+        for keys1, checks1 in checks.items():
+            second_dict[keys1] = type(checks1)
+
+    else:
+        second_dict[keys] = type(checks)
+
+print(second_dict)
