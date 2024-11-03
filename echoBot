@@ -1,0 +1,9 @@
+import telebot
+
+bot = telebot.TeleBot(token='7780603033:AAGQ86sHIlKJrZek5ueSlAOzUJM3ujzlW5Y')
+
+@bot.message_handler(content_types=['text'])
+def repear_all_messages(messages):
+    bot.send_message(messages.chat.id, messages.text)
+
+bot.polling()
