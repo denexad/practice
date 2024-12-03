@@ -10,9 +10,7 @@ def get_id(func):
         return func(message, user_id, *args, **kwargs)  # Передаємо ID далі
     return wrapper
 
-# Логіка обробників команд
 def register_handlers(bot: TeleBot):
-    """Реєструє всі команди для бота."""
 
     @bot.message_handler(commands=['start'])
     @get_id  # Використовуємо кастомний декоратор
