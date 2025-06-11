@@ -14,7 +14,7 @@ class Denys:
         return [self.name, self.last_name]
 
 
-name_last_name = Denys('Denys', 'Panasiyk', 2008)
+name_last_name = Denys('Denys', 'Panasiyk', 2007)
 list_name = name_last_name.set_name()
 my_course = name_last_name.calculates_the_course(2025)
 print(f'По розрахункам, ви навчаєтесь приблизно на курсі {my_course}')
