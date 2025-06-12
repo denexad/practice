@@ -1,4 +1,4 @@
-class Denys:
+class Roman:
     def __init__(self, name=None, last_name=None, birth_year=None):
         self.name = name
         self.last_name = last_name
@@ -14,7 +14,7 @@ class Denys:
         return [self.name, self.last_name]
 
 
-class IT(Denys):
+class IT(Roman):
     PRICE = {
         'Java': 5000,
         'Python': 4599,
@@ -42,7 +42,7 @@ class IT(Denys):
         return self.__salary
 
 
-IT_de = IT('Denys', 'Panasiyk', 2007, 'Python', 3)
+IT_de = IT('Roman', 'Rudnik', 2007, 'Python', 3)
 print(IT_de.set_name())
 print(
     f"По розрахунках, ви навчаєтесь приблизно на курсі {IT_de.calculates_the_course(2025)}")
